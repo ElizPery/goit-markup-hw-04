@@ -30,8 +30,24 @@
             </nav>
             <div class="contacts-flex">
                 <ul class="header-contacts style-list">
-                    <li class="item"><a href="mailto:info@devstudio.com" class="list">info@devstudio.com</a></li>
-                    <li class="item"><a href="tel:+380961111111" class="list">+38 096 111 11 11</a></li>
+                    <li class="item">
+                        <div class="contacts-container">
+                            <a class="link-svg-header mail">
+                                <svg width="16" height="12" class="svg-mail">
+                                    <use href="./images/sprite.svg#email"></use>
+                                </svg>
+                            </a><a href="mailto:info@devstudio.com" class="list">info@devstudio.com</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="contacts-container">
+                            <a class="link-svg-header tel">
+                                <svg width="10" height="16" class="svg-tel">
+                                    <use href="./images/sprite.svg#smartphone"></use>
+                                </svg>
+                            </a><a href="tel:+380961111111" class="list">+38 096 111 11 11</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -50,7 +66,7 @@
                 </ul>
                 
                 <ul class="projects style-list">
-                    <li class="projects-card">
+                    <li class="projects-card technic">
                         <img src="./images/project1.jpg" alt="Ноутбук на екрані якого веб-сайт" width="370" class="img-space-no">
                         <div class="border-card">
                             <h2 class="project-title">Технокряк</h2>
@@ -120,18 +136,54 @@
 
     <footer class="footer">
         <div class="container cont-footer">
-            <a href="./index.html" class="logo footer">
-                <span class="logo accent">Web</span>Studio
-            </a>
-            <address>
-                <ul class="footer-list style-list">
-                    <li class="footer-item"><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
-                            rel="noopener noreferrer nofollow" class="footer-map">м. Київ, пр-т Лесі Українки, 26</a></li>
-                    <li class="footer-item"><a href="mailto:info@devstudio.com" class="footer-mail">info@devstudio.com</a>
+            <div class="footer-colum1">
+                <a href="./index.html" class="logo footer">
+                    <span class="logo accent">Web</span>Studio
+                </a>
+                <address>
+                    <ul class="footer-list style-list">
+                        <li class="footer-item"><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                                rel="noopener noreferrer nofollow" class="footer-map">м. Київ, пр-т Лесі Українки, 26</a>
+                        </li>
+                        <li class="footer-item"><a href="mailto:info@devstudio.com"
+                                class="footer-mail">info@devstudio.com</a></li>
+                        <li class="footer-item"><a href="tel:+380961111111" class="footer-tel">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-colum2">
+                <p class="footer-link-title">Приєднуйтесь</p>
+                <ul class="social-net-flex style-list">
+                    <li class="item">
+                        <a href="#" class="link-social-net link-sn-footer">
+                            <svg class="svg-social-net net-footer">
+                                <use href="./images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="footer-item"><a href="tel:+380961111111" class="footer-tel">+38 096 111 11 11</a></li>
+                    <li class="item">
+                        <a href="#" class="link-social-net link-sn-footer">
+                            <svg class="svg-social-net net-footer">
+                                <use href="./images/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link-social-net link-sn-footer">
+                            <svg class="svg-social-net net-footer">
+                                <use href="./images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link-social-net link-sn-footer">
+                            <svg class="svg-social-net net-footer">
+                                <use href="./images/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
 
