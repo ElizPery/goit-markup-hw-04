@@ -106,7 +106,7 @@ header {
 .header-contacts .list {
     padding-top: 32px;
     padding-bottom: 32px;
-    display: inline-block;
+    display: flex;
 
     color: var(--primary-text-color);
     text-decoration: none;
@@ -325,13 +325,9 @@ header {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+    color: var(--link-color);
 }
 
-.svg-social-net {
-    width: 20px;
-    height: 20px;
-    fill: var(--link-color);
-}
 
 .svg-social-net.net-footer {
     fill: var(--primary-white-color);
@@ -354,10 +350,16 @@ header {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.link-social-net:hover,
-.link-social-net:focus {
+.svg-social-net {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.item .link-social-net:hover,
+.item .link-social-net:focus {
     background-color: var(--accent-color);
-    fill: var(--primary-white-color);
+    color: var(--primary-white-color);
 }
 
 
@@ -366,14 +368,14 @@ header {
 .clients-logo {
     display: flex;
     justify-content: center;
-    font-size: 0;
+
 }
 
 
 .svg-client {
     width: 106px;
     height: 60px;
-    fill: var(--link-color);
+    fill: currentColor;
 }
 
 .clients-logo > .item + .item {
@@ -389,18 +391,15 @@ header {
     justify-content: center;
     height: 92px;
     width: 170px;
-
+    color: var(--link-color);
 }
 
 .link-client:hover,
 .link-client:focus {
     border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
-.svg-client:hover,
-.svg-client:focus {
-    fill: var(--accent-color);
-}
 
 /* Footer */
 
