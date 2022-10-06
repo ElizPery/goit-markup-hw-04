@@ -103,24 +103,6 @@ header {
     margin-left: auto;
 }
 
-.link-svg-header {
-    display: inline-block;
-    padding-right: 10px;
-}
-
-.link-svg-header.mail {
-    padding-bottom: 34px;
-    padding-top: 34px;
-    font-size: 0;
-}
-
-.link-svg-header.tel {
-    font-size: 0;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
-
 .header-contacts .list {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -131,16 +113,17 @@ header {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-align: center
 }
 
-.svg-mail,
-.svg-tel {
-    fill: var(--primary-text-color);
+.svg-contacts {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
-.svg-mail:hover,
-.svg-tel:hover {
-    fill: var(--accent-color);
+.link-contacts {
+    display: flex;
+    align-items: center;
 }
 
 .nav-list .list:hover,
@@ -150,9 +133,6 @@ header {
     color: var(--accent-color);
 }
 
-.contacts-container {
-    display: flex;
-}
 
 /* Hero */
 .overlay {
@@ -237,8 +217,11 @@ header {
 
 .benefit-img {
     background-color: var(--third-bgr);
-    padding: 25px 100px;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
 }
 
 .benefit-svg {
@@ -336,19 +319,18 @@ header {
 /* Social-links */
 
 .link-social-net {
-    display: inline-block;
+    display: flex;
     height: 44px;
     width: 44px;
     border-radius: 50%;
-    
+    align-items: center;
+    justify-content: center;
 }
 
 .svg-social-net {
     width: 20px;
     height: 20px;
     fill: var(--link-color);
-    box-sizing: content-box;
-    padding: 12px;
 }
 
 .svg-social-net.net-footer {
@@ -375,12 +357,9 @@ header {
 .link-social-net:hover,
 .link-social-net:focus {
     background-color: var(--accent-color);
-}
-
-.svg-social-net:hover,
-.svg-social-net:focus {
     fill: var(--primary-white-color);
 }
+
 
 /* Clients */
 
@@ -394,8 +373,6 @@ header {
 .svg-client {
     width: 106px;
     height: 60px;
-    box-sizing: content-box;
-    padding: 15px 31px;
     fill: var(--link-color);
 }
 
@@ -407,7 +384,11 @@ header {
     border: 1px solid;
     border-color: var(--link-color);
     border-radius: 4px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    width: 170px;
 
 }
 
